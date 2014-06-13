@@ -10,7 +10,7 @@ $(function(){
 		$('.mj-slider').eq(i).fadeOut();
 		i = i === $('.mj-slider').length - 1 ? 0 : i + 1;
 		$('.mj-slider').eq(i).fadeIn();
-	}, 6000);
+	}, 6000); // <-- Change that number to change the time between fades
 	$('.mj-links a').click(function(){
 		clearInterval(loop);
 		$('.mj-slider').fadeOut();
